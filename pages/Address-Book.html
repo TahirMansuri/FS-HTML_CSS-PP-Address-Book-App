@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" />
+
+    <link href="/css/Address-Book.css" rel="stylesheet">
+
+    <title>Adress-Book-App</title>
+</head>
+<body>
+    <header>
+        <!-- UC - 1 -->
+        <div class="header-content">
+            <img src="../assets/images/logo.png" alt="">
+            <div>
+                <span class="address-text">ADDRESS</span><br>
+                <span class="address-text address-book">BOOK</span>
+            </div>
+        </div>
+
+        <div class="form-content">
+            <form class="form" action="#" onsubmit="save()">
+                <div class="form-head">PERSON ADDRESS FORM</div>
+                <div>
+                    <p>
+                        <input type="text" placeholder=" " id="fullname" name="fullname" required>
+                        <label>Full Name :</label>  
+                    </p>
+                    <error-output class="fullname-error" for="text"></error-output>
+                    <p>
+                        <textarea placeholder=" " id="address" name="address" requiredcols="10" rows="5"></textarea>
+                        <label>Address :</label>
+                    </p>
+                    
+                    <div class="row-content">
+                        
+                            <select class="form-control" id="city" name="city" style="size: 30px;">
+                                <option value="None">Select City</option>
+                                <option value="Shahada">Shahada</option>
+                                <option value="Taloda">Taloda</option>
+                                <option value="Nandurbar">Nandurbar</option>
+                                <option value="Dondaicha">Dondaicha</option>
+                            </select>
+                            <error-output class="fullname-error" for="text"></error-output>
+                            <select class="form-control"  id="state" name="state">
+                                <option value="None">Select State</option>
+                                <option value="Maharashtra">Maharashtra</option>
+                                <option value="MP">MP</option>
+                                <option value="Gujrat">Gujrat</option>
+                                <option value="Punjab">Punjab</option>
+                            </select>
+                        <p>
+                            <input placeholder=" " id="zip" name="zip" required>
+                            <label>Enter the Zip :</label>
+                        </p>    
+
+                    </div>
+                    <p>
+                        <input placeholder=" " id="phone" name="phone" required>
+                        <label>Phone Number :</label>
+                    </p>
+                    <error-output class="phone-error" for="text"></error-output>
+                    <div class="buttonParent">
+                        <div class="submit-reset">
+                            <button type="submit" class="button submitButton" id="submitButton">Submit</button>
+                            <button type="reset" class="button submitButton">Reset</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </header>
+    <script src="/js/Address-Book.js"></script>
+</body>
+</html>
