@@ -22,7 +22,7 @@
         </div>
 
         <div class="form-content">
-            <form class="form" action="#" onsubmit="save()">
+            <form class="form" action="#" onsubmit="save()" onreset="resetForm()">
                 <div class="form-head">PERSON ADDRESS FORM</div>
                 <div>
                     <p>
@@ -31,7 +31,7 @@
                     </p>
                     <error-output class="fullname-error" for="text"></error-output>
                     <p>
-                        <textarea placeholder=" " id="address" name="address" requiredcols="10" rows="5"></textarea>
+                        <textarea id="address" name="address" requiredcols="10" rows="5"></textarea>
                         <label>Address :</label>
                     </p>
                     
